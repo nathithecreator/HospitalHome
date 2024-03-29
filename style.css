@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+  width: 1170px;
+  margin: auto;
+}
+header{
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("images/2.jpg");
+  height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  
+
+  
+}
+
+
+
+.nav-area{
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.nav-area li{
+  display: inline-block;
+}
+.nav-area li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: 'Poppins';
+  font-size: 18px;
+
+}
+
+.nav-area li a:hover{
+  background: #fff;
+  color: #333;
+
+}
+
+.logo img{
+  width: 100px;
+  float: left;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 4px;
+}
+
+.welcome-text{
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: 15% 30%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins';
+  
+}
+
+.welcome-text h1{
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.welcome-text h2{
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  font-weight: lighter;
+
+}
+
+.welcome-text a{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #fff;
+  color:#333;
+}
+
+.welcome-text a:hover{
+  background: #333;
+  color: #fff;
+}
+
+.nav-area li .sign-in-link {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 3px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-size: 15px;
+}
+
+.nav-area li .sign-in-link:hover {
+  background: #fff;
+  color: #333;
+}
+

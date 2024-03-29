@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="./styleSignUp.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="images/logos.png" alt="">
+            </div>
+            <ul class="nav-area">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="AboutUS.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="SignIn.html" class="sign-in-link">Sign In</a></li>
+                <li><a href="Register.html" class="sign-in-link">Register</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="login-form">
+        <h1 style="font-family: 'Poppins';">Make A Profile</h1>
+        <form action="Home.html" method="post" class="two-column-form" id="doctorRegistration">
+            <div class="column">
+                <p style="font-family: 'Poppins';">Name</p>
+                <input type="text" name="name" id="name" placeholder="Name">
+
+                <p style="font-family: 'Poppins';">Surname</p>
+                <input type="text" name="surname" id="surname" placeholder="Surname">
+
+                <p style="font-family: 'Poppins';">Specialty</p>
+                <input type="text" name="specialty" id="specialty" placeholder="Medical Field">
+                
+                <p style="font-family: 'Poppins';">Profile Picture</p>
+                <input type="file" name="profile_picture" id="profile_picture" accept="image/*" class="upload-button">
+
+            </div>
+
+            <div class="column">
+                <p style="font-family: 'Poppins';">HPCSA</p>
+                <input type="text" name="license" id="license" placeholder="HPCSA Licence">
+
+                <p style="font-family: 'Poppins';">Practice</p>
+                <input type="text" name="practice" id="practice" placeholder="Hospital">
+
+                <p style="font-family: 'Poppins';">Telephone</p>
+                <input type="text" name="number" id="number" placeholder="Number">
+
+                
+                <p style="font-family: 'Poppins';">Register</p>
+                <button type="submit" style="display: inline-block;
+                background-color: #1900a8; /* Button background color */
+                color: #fff; /* Button text color */
+                padding: 8px 8px; /* Button padding */
+                border-radius: 5px; /* Button border radius */
+                cursor: pointer;
+                font-family: 'Poppins';
+                border-radius: 11px;
+                margin-top: 2px; 
+                font-size: 13px;
+                font-weight: bold;
+                width: 110%;">Register</button>
+            </div>
+
+            <!-- Hidden input fields for email and password -->
+            <input type="hidden" name="email" id="hiddenEmail" value="">
+            <input type="hidden" name="password" id="hiddenPassword" value="">
+
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="FireReg.js"></script>
+
+    <!-- JavaScript to populate the hidden inputs with email and password -->
+    <script>
+        // Retrieve email and password from local storage
+        const email = localStorage.getItem('email');
+        const password = localStorage.getItem('password');
+
+        // Populate the hidden inputs in the form with email and password
+        document.getElementById('hiddenEmail').value = email;
+        document.getElementById('hiddenPassword').value = password;
+    </script>
+</body>
+</html>

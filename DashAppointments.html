@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Side Menu Bar CSS</title>
+    <link rel="stylesheet" href="styleDashTables.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+  </head>
+  <body>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="container">
+      <div class="sidebar">
+        <header>Louis Pasteur</header>
+        <ul>
+          <li><a href="#"><i class="fas fa-qrcode"></i>Overview</a></li>
+          <li><a href="#"><i class="fas fa-stream"></i>Patients</a></li>
+          <li><a href="#"><i class="fas fa-link"></i>Messages</a></li>
+          <li><a href="#"><i class="fas fa-stream"></i>Appointments</a></li>
+          <li><a href="#"><i class="fas fa-calendar-week"></i>Logout</a></li>
+        </ul>
+        <img src="images/logo2.png" width="240px" height="240px">
+      </div>
+
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">Patients</th>
+          <th scope="col">Time</th>
+          <th scope="col">Date</th>
+          <th scope="col">Reason</th>
+          <th scope="col">Status</th>
+        </tr>
+        </thead>
+        
+        
+        <tbody>
+        <tr>
+            <td> nathi@gmail.com </td>
+            <td> 11:45</td>
+            <td> 25 October 2023 </td>
+        
+            <td> 
+              Hey doctor I'm getting stomach cramps and I tried Eno and it's not working. I was hoping for an appointment just before 12 pm when I have to go to work.
+            </td>
+            
+            <td><button style="background-color: blue;">Pending</button>  </td>
+        </tr>
+        <tr>
+          <td>johndoe@gmail.com</td>
+          <td>10:30</td>
+          <td>26 October 2023</td>
+          <td>I'm having a sore throat and a fever. I'm worried it might be strep throat.</td>
+          <td><button style="background-color: red;">Urgent</button></td>
+        </tr>
+        <tr>
+          <td>janedoe@gmail.com</td>
+          <td>11:15</td>
+          <td>26 October 2023</td>
+          <td>I'm pregnant and I'm having some spotting. I'm a little worried.</td>
+          <td><button style="background-color: red;">Urgent</button></td>
+        </tr>
+        <tr>
+          <td>michaelsmith@gmail.com</td>
+          <td>12:00</td>
+          <td>26 October 2023</td>
+          <td>I have a rash on my arm and it's really itchy. I'm not sure what it is.</td>
+          <td><button style="background-color: blue;">Pending</button></td>
+        </tr>
+        <tr>
+          <td>susanwilliams@gmail.com</td>
+          <td>12:45</td>
+          <td>26 October 2023</td>
+          <td>I'm feeling really dizzy and lightheaded. I'm also having some nausea.</td>
+          <td><button style="background-color: red;">Urgent</button></td>
+        </tr>
+        <tr>
+          <td>davidmiller@gmail.com</td>
+          <td>01:30</td>
+          <td>26 October 2023</td>
+          <td>I'm having a lot of chest pain and it's getting worse. I'm also having shortness of breath.</td>
+          <td><button style="background-color: red;">Urgent</button></td>
+        </tr>
+        <tr>
+          <td>sarahjones@gmail.com</td>
+          <td>10:00</td>
+          <td>27 October 2023</td>
+          <td>I'm having a migraine headache and it's really bad. I've tried over-the-counter pain medication, but it's not helping.</td>
+          <td><button style="background-color: yellow;">Progress</button></td>
+          </tr>
+          <tr>
+          <td>markrobinson@gmail.com</td>
+          <td>10:45</td>
+          <td>27 October 2023</td>
+          <td>I'm having a hard time sleeping and I'm feeling really tired all the time. I'm also having some trouble concentrating.</td>
+          <td><button style="background-color: blue;">Pending</button></td>
+          </tr>
+          </tr>
+          <tr>
+          <td>williamson.emma@gmail.com</td>
+          <td>11:30</td>
+          <td>27 October 2023</td>
+          <td>I'm having a lot of lower back pain and it's getting worse. I'm also having some numbness and tingling in my legs.</td>
+          <td><button style="background-color: yellow;">Progress</button></td>
+          </tr>
+          <tr>
+          <td>christopher.johnson@gmail.com</td>
+          <td>12:15</td>
+          <td>27 October 2023</td>
+          <td>I'm having a lot of anxiety and panic attacks. I'm also having trouble sleeping and concentrating.</td>
+          <td><button style="background-color: red;">Urgent</button></td>
+          </tr>
+          <tr>
+          <td>emily.brown@gmail.com</td>
+          <td>13:00</td>
+          <td>27 October 2023</td>
+          <td>I'm having a lot of diarrhea and vomiting. I'm also feeling really dehydrated.</td>
+          <td><button style="background-color: red;">Urgent</button></td>
+          </tr>
+          
+        </tbody>
+        
+        
+      </table>
+
+      
+
+			<div class="search">
+				<label for="search" style="font-size: 17px;">Search:</label>
+				<input type="text" id="search" name="search" placeholder="">
+			</div>
+
+			<div class="heading">
+				<h1>
+					Patient Appointments
+				</h1>
+			</div>
+			
+				
+			
+  </body>
+</html>

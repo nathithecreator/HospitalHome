@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="./styleLogin.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="images/logos.png" alt="">
+            </div>
+            <ul class="nav-area">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="sign-in-link">Sign In</a></li>
+                <li><a href="#" class="sign-in-link">Register</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="login-form">
+        <h1 style="font-family: 'Poppins';">Medical Practitioner Register </h1>
+        <form action="SignUp.html" method="post">
+            <p style="font-family: 'Poppins';">Email</p>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <p style="font-family: 'Poppins';">Password</p>
+            <input type="text" name="password" id="password" placeholder="Password">
+            <button type="button" id="registerButton">Register</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registerButton').addEventListener('click', function () {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Store email and password in local storage
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+
+            // Redirect to the SignUp page
+            window.location.href = 'SignUp.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Add your other CSS styles below this line */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Add your CSS styles here */
+.container {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #000000;
+  left: 0;
+  transition: all 0.5s ease;
+  z-index: 1; /* Ensure the sidebar is in front */
+  margin-top: -30px;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #1900a8;
+  user-select: none;
+}
+
+.sidebar ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul a {
+  display: block;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.4s;
+  text-decoration: none; /* Remove underlines */
+}
+
+.sidebar ul li:hover a {
+  padding-left: 50px;
+  text-decoration: none; /* Remove underlines */
+  background: #1db4ff; /* Change background color on hover */
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+
+#check {
+  display: none;
+}
+
+label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+  background: #000000;
+  border-radius: 3px;
+}
+
+label #btn {
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+
+#check:checked ~ .sidebar {
+  left: 0;
+}
+
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+
+#check:checked ~ section {
+  margin-left: 250px;
+}
+
+
+#map-component {
+  width: 300px; /* Adjust this to match your needs */
+  height: 300px;
+  margin-left: 250px; /* Adjust this to match the sidebar width */
+	margin-top: 300px;
+  z-index: 0; /* Ensure the map is behind the sidebar */
+}
+
+
+.search {
+  position: fixed; /* Change to 'fixed' for a fixed position */
+  top: 0;
+  right: 0;
+	margin-top: 20px;
+	margin-right: 30px;
+  z-index: 1; /* Ensure it's on top of other elements */
+}
+
+.search input[type="text"] {
+	border: 1px solid #ccc;
+	border-radius: 5px; /* Add border radius for rounded corners */
+	padding: 5px;
+}
+
+.heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 300px;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* You can adjust the font size as needed */
+  z-index: 0;
+}
+
+
+.table {
+  margin-left: 170px; /* Adjust this to match the sidebar width */
+  margin-top: 70px;
+  z-index: 0;
+  width: calc(100% - 250px); /* Adjust the width to fit the remaining space */
+}
+
+.table table {
+  width: 100%; /* Use 100% width for the table */
+  border-collapse: collapse; /* Remove spacing between table cells */
+}
+
+.table th,
+.table td {
+  padding: 8px; /* Reduce the padding between columns */
+  text-align: left;
+  border: 1px solid #ddd; /* Add borders for table cells */
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table th:first-child,
+.table td:first-child {
+  border-left: none; /* Remove left border for the first column */
+}
+
+.table th:last-child,
+.table td:last-child {
+  border-right: none; /* Remove right border for the last column */
+}
+
